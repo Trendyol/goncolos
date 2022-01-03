@@ -1,0 +1,9 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+BenchmarkDotNet.Artifacts
+.idea
+*.DotSettings.user
+*.nupkg

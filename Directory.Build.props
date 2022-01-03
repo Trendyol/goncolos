@@ -1,0 +1,16 @@
+﻿<Project>
+    <PropertyGroup>
+        <Authors>Oğuzhan Eren</Authors>
+        <Company>Trendyol</Company>
+        <Product>Goncolos</Product>
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>kafka confluent bus producer consumer</PackageTags>
+        <Description>Simple Kafka Wrapper</Description>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageProjectUrl>https://github.com/Trendyol/goncolos</PackageProjectUrl>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <RepositoryUrl>https://github.com/Trendyol/goncolos</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    </PropertyGroup>
+</Project>
