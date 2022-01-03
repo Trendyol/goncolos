@@ -196,19 +196,6 @@ namespace Goncolos.Tests.Consumers
         }
 
         [Fact]
-        public void should_not_equal_two_same_topic_partition_queue()
-        {
-            var topicPartition = new TopicPartition("test-topic", 1);
-            var configuration = new KafkaConsumerConfiguration("servers", "group")
-                .Subscribe(s => s.To("test-topic").OnMessageReceived((messages, token) => Task.CompletedTask));
-            var sut = new ChannelBasedWorker(_topicStateManager, topicPartition, configuration);
-
-            var sut2 = new ChannelBasedWorker(_topicStateManager, topicPartition, configuration);
-            sut.ShouldNotBe(sut2);
-        }
-
-
-        [Fact]
         public async ValueTask should_pause_consumer_when_queue_is_full()
         {
             var topicPartition = new TopicPartition("test-topic", 1);
